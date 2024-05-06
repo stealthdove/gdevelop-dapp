@@ -40,6 +40,11 @@ const sideLinks = [
     text: "Play",
     icon: "/icons/play.svg",
   },
+  {
+    link: "/credits",
+    text: "Credits",
+    icon: "/icons/credits.svg",
+  }
 ];
 
 export const Sidebar = (props: Props) => {

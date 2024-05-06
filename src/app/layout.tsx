@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Provider } from "@/components/layout/provider";
 import "./globals.css";
-
+import "../components/styles.css";
+import { Toaster } from "@/components/ui/sonner";
+import { Provider } from "@/components/layout/provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,10 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-black`}>
-        <Provider>
-          {children}
-        </Provider>
+      <body className={`${inter.className} bg-black no-scroll`}>
+        <Provider>{children}</Provider>
+        <Toaster className="bg-white" />
       </body>
     </html>
   );

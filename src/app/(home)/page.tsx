@@ -12,9 +12,9 @@ export default function Home() {
       <section style={{ padding: "16px 0px" }}>
         <TitleHeader title="Tutorials" path="tutorials" />
         <div className="tutorial-section-container">
-          {[1, 2, 3, 4, 5]?.map(
-            (i) => <TutorialCard key={i} />
-          )}
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 13, 15, 16]?.map((i) => (
+            <TutorialCard key={i} />
+          ))}
         </div>
       </section>
     </main>
